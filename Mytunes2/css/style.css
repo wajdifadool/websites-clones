@@ -1,0 +1,538 @@
+/* @import url('https://fonts.googleapis.com/css?family=PT+Sans'); */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    /* color: #333; */
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Basic Responsive Menu by Ash See Link: 
+https://codepen.io/neilso/pen/DMBVrg
+ */
+
+/* Utility classes */
+/* Containrer  */
+.container {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 3rem;
+    max-width: 1280px;
+}
+
+.bg-dark {
+    background: #171919;
+}
+
+.section {
+    padding-top: 10rem;
+}
+
+/* Margin */
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+/* Texts */
+.text-xl {
+    font-size: 6rem;
+}
+
+.text-heading {
+    font-size: 4.6rem;
+}
+
+.text-card {
+    font-size: 2.5rem;
+}
+
+.text-lg {
+    font-size: 2rem;
+}
+
+.text-md {
+    font-size: 1.6rem;
+}
+
+.text-small {
+    font-size: 1.4rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: #e2e0dc;
+}
+
+/* Buttons */
+.btn {
+    padding: .3rem 1rem;
+    color: #ccc;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #333;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary:hover {
+    /* color: #444; */
+    background: rgb(64, 61, 61);
+}
+
+/* Showcase */
+.showcase {
+    background: linear-gradient(-30deg, #d754ad 0%, #d754ad 10%, #f96785 62%, #fe7333 100%);
+    /* Fill the space the between the navigation bar and the showcase */
+    color: #fff;
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+.showcase h1 {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.showcase p {
+    margin-bottom: 2rem;
+}
+
+.content {
+    text-align: center;
+    align-items: center;
+}
+
+.downloads {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* text-align: center;
+    align-items: center;
+    justify-content: center; */
+
+    margin: 0 auto;
+    width: 500px;
+    grid-gap: 10px;
+}
+
+.requirements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.requirements p {
+    padding-top: 22px;
+    display: block;
+}
+
+.row1 {
+    /* color: #000;
+    background-color: #000; */
+    /* height: 022px; */
+    border: rgb(16, 16, 16) 1px solid;
+}
+
+.links:hover {
+    border-bottom: 1px solid #ccc;
+}
+
+
+/* Music and podcast */
+#music h1 {
+    line-height: 1.2;
+    /* padding-bottom: 2rem; */
+}
+
+#lead {
+    margin: 3rem auto;
+    margin-bottom: 9rem;
+}
+
+
+/* Handle the screen BackGround  */
+#image-screen {
+    background: url('../images/mbair_itunes__bkf9ksiikx6u_large.png') center no-repeat;
+    padding: 45px 20px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+    text-align: left;
+}
+
+
+/* .card:first-child {
+    text-align: center;
+    padding-top: 60px;;
+} */
+
+
+.cards h1 {
+    align-items: center;
+
+    margin-top: 4rem;
+    width: 18rem;
+    margin: 5rem auto;
+}
+
+.card p {
+    padding-bottom: 32px;
+}
+
+.card-link {
+    padding: 2px;
+    /* margin: 0; */
+    color: #06c;
+
+    font-size: 1.4rem;
+
+}
+
+.links_holder {
+    display: grid;
+    font-size: 1.4rem;
+}
+
+/* Support */
+
+.support {
+    margin-bottom: 8rem;
+}
+
+.support .cards-support {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+/* footer */
+
+.bg-offWhite {
+    background: #f1f1f1d9;
+    color: #444;
+}
+
+.footer-lines {
+    text-align: left;
+    line-height: 2;
+    color: #333;
+    padding-top: 40px;
+}
+
+footer hr {
+    margin: 40px 0;
+}
+
+footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    text-align: left;
+    padding: 2rem;
+}
+
+footer .footer-cols ul {
+    list-style: none;
+}
+
+footer .footer-cols ul a {
+    color: #555;
+}
+
+footer .footer-cols ul li:first-child {
+    font-size: 1.2rem;
+
+    padding-bottom: 0.6rem;
+
+}
+
+/* Navigation  */
+nav {
+    height: 50px;
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #eee;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #444;
+}
+
+nav a#openup {
+    display: none;
+}
+
+/* End of Basic Responsive Menu */
+
+@media screen and (max-width: 780px) {
+    h1 {
+        font-size: 2.8em;
+    }
+
+    nav {
+        height: auto;
+        border-bottom: 0;
+    }
+
+    nav ul {
+        display: none;
+        height: auto;
+    }
+
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #333;
+        border-bottom: 1px solid #555;
+    }
+
+    nav a:hover {
+        background: #444;
+    }
+
+    nav a#openup:after {
+        content: "|||";
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Safari and Chrome */
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+    }
+
+    nav a#openup {
+        display: block;
+        background-color: #333;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+
+
+
+/* Media Quierie */
+@media screen and (max-width: 1420px) {
+
+    /* Texts */
+    .text-xl {
+        font-size: 5rem;
+    }
+
+    .text-heading {
+        font-size: 4.2rem;
+    }
+
+    .text-card {
+        font-size: 2.2rem;
+    }
+
+    .text-lg {
+        font-size: 1.5rem;
+    }
+
+    .text-md {
+        font-size: 1.3rem;
+    }
+
+    .text-small {
+        font-size: 1.1rem;
+    }
+
+    /* Showcase */
+    .showcase h1 {
+        margin-top: 2.1rem;
+    }
+
+    .showcase {
+        height: 80vh;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+
+    .text-xl {
+        font-size: 4.2rem;
+    }
+
+    .text-lg {
+        font-size: 1.3rem;
+    }
+
+    .text-md {
+        font-size: 1.1rem;
+    }
+
+    .text-small {
+        font-size: 1rem;
+    }
+
+    .showcase .requirements hr {
+        display: none;
+    }
+
+    .requirements {
+        display: block;
+    }
+
+    #image-screen {
+        background: none;
+        /* padding-left: 20px;
+        padding-right: 20px; */
+        overflow-y: hidden;
+    }
+
+    .support .cards-support {
+        display: block;
+        /* grid-template-rows: repeat(2, 1fr); */
+        padding: 0 75px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .support .cards-support .card-support {
+        margin-bottom: 40px;
+    }
+
+    footer .footer-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .text-xl {
+        font-size: 2.2rem;
+    }
+
+    .text-lg {
+        font-size: 1.2rem;
+    }
+
+    .text-md {
+        font-size: 1.1rem;
+    }
+
+    .text-small {
+        font-size: 1.3rem;
+    }
+
+    .showcase .requirements hr {
+        display: none;
+    }
+
+    .requirements {
+        display: block;
+    }
+
+    #image-screen {
+        background: none;
+        /* padding-left: 20px;
+        padding-right: 20px; */
+        overflow-y: hidden;
+    }
+
+    .support .cards-support {
+        display: block;
+        /* grid-template-rows: repeat(2, 1fr); */
+        padding: 0 75px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .support .cards-support .card-support {
+        margin-bottom: 40px;
+    }
+
+    footer .footer-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards {
+        display: block;
+
+        padding: 10px;
+        text-align: left;
+    }
+
+
+}

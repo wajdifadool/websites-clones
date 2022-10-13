@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+:root{
+  --primary-color:#00ed82;
+}
+*{
+  box-sizing: border-box;
+  margin: 0 ;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  background: #000;
+  color: #fff ;
+  line-height: 1.7 ;
+  overflow-x: hidden;
+
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 300 ;
+}
+h4{
+  color: var(--primary-color);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+a {
+  color:#fff ;
+  text-decoration: none ;
+}
+a:hover{
+  color: #ccc;
+
+}
+ ul {
+   list-style-type: none;
+ }
+img {
+  width: 100% ;
+}
+
+/* header */
+
+.header {
+  height: 530px;
+  background: url('../img/header.jpg') no-repeat center center/cover;
+}
+.header:after{
+  content:"";
+  top: 0 ;
+  :left 0 ;
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.76) 15.54%,
+    rgba(0, 0, 0, 0.192) 60.23%,
+    rgba(0, 0, 0, 8e-5) 100%
+  );
+}
+.header nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px ;
+  z-index: 2 ;
+  position: relative;
+}
+.header nav .login-btn {
+  cursor: pointer;
+  background: none ;
+  border :none ;
+  color:#fff ;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.header .header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.header .logo {
+  width: 280px;
+  margin: 20px 0 ;
+}
+
+
+.header .header-text-1{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header .header-text-2{
+  font-size: 18px;
+  margin: 25px 0 ;
+}
+
+
+/* sub header */
+.sub-header{
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr ;
+  grid-gap: 40px;
+  align-items: center;
+  padding: 30px 40px;
+  background: linear-gradient(
+    318.68deg,
+    #0f495c 0%,
+    #0d3940 49.72%,
+    #08141f 100%
+  );
+
+}
+
+/* Utily class  */
+.btn {
+  display: inline;
+  background: #fff;
+  color: #333;
+  min-width: 145px;
+  padding: 20px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 14px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn-cta:hover {
+  opacity: 0.8;
+}
+
+.btn-outline{
+  background: none ;
+  color: #fff ;
+  border: 2px solid #fff;/
+}
+
+
+.btn-outline:hover{
+  color: #fff ;
+  border: 2px solid #ccc;
+}
+
+
+.legal-text{
+  font-size: 11px;
+  color: #ccc;
+  margin-top: 20px;
+}
+.sub-link{
+  display: block;
+  color: #ccc ;
+  font-size: 12px ;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+.text-xl {
+  font-size: 70px;
+  font-weight: bold;
+}
+.sub-text {
+  max-width: 850px;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+
+/* will take the last div and push it to the end of screen to down in y axis) */
+.sub-header > div:last-of-type{
+  justify-self: end;  /*X axis;*/
+  align-self: end; /*  Y axis  */
+}
+/* could have been direct call form .sub-link */
+.sub-header > div:last-of-type .sub-link{
+  text-align: center;
+  padding-top: 8px;
+}
+
+
+/* Categories */
+/* the next trcik will move evrey thing to center in x axis  */
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 90px 40px;
+  justify-content: center;
+}
+.categories .covers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 14px;
+}
+
+.categories .covers > div {
+  height: 500px;
+  width: 300px;
+  position: relative;
+  /* i posinit realtive because i want the text inside to be absloute */
+}
+.categories .cover-1 {
+  background: url('../img/cover-1.jpg') no-repeat center center/cover;
+}
+.categories .cover-2 {
+  background: url('../img/cover-2.jpg') no-repeat center center/cover;
+}
+.categories .cover-3 {
+  background: url('../img/cover-3.jpg') no-repeat center center/cover;
+}
+
+.categories .cover-4 {
+  background: url('../img/cover-4.jpg') no-repeat center center/cover;
+}
+
+.categories .cover-grad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    156.82deg,
+    rgba(0,0,0,0.6) 4.58%,
+    rgba(0,0,0,0.0) 69.61%
+    ),linear-gradient(
+     24.5deg,
+     rgba(0,0,0,0.2) 4.71%, rgba(0,0,0,0.0) 71.49%)
+}
+.categories .cover-text {
+  /* will move them to the top  */
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-align: left;
+
+}
+/*  live */
+.live{
+  background: #1515116 ;
+  padding: 40px;
+}
+.live-border {
+  border: solid 4px var(--primary-color);
+  border-radius: 16px;
+  padding:  100px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.live a {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+
+/* live Sports */
+.live-sports{
+  background: url('../img/live-sports.jpg') no-repeat center center/cover ;
+  height: 800px;
+  position: relative;
+}
+.live-sports-logos{
+  width: 400px;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.live-sports-logos>div{
+  background: url('../img/network-logo-bg.png') no-repeat center center/cover ;
+  height: 70px;
+  width: 70px;
+
+  display: flex; /* in order to algin the image in the cneter  */
+  justify-content: center;
+  align-items: center;
+}
+.live-sports-logos img {
+  width: 50px;
+}
+
+
+.live-sports-content{
+  position: absolute;;
+  top: 160px;
+  left: 100px;
+  max-width: 550px;
+}
+
+/* Footer */
+.footer {
+  background: #ebedf2 ;
+  color: #333;
+
+}
+.footer a {
+  color: #333;
+}
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px;
+}
+
+.footer-lists{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-lists .list-head{
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+.divider{
+  width: 100%;
+  height: 3px;
+  border-top: 1px solid #ccc;
+  margin: 30px 0 ;
+}
+
+.social-icons img {
+  width: 25px;
+  height: 25px ;
+  margin-right: 25px;
+}
+
+/* Media Queries */
+@media (max-width:1240px){
+  .categories .covers {
+    margin-top: 10px;
+    grid-template-columns: 1fr  1fr;
+  }
+  .live-sports{
+    background: url('../img/live-sports-small.jpg') no-repeat  center center/cover ;
+  }
+  .live-sports-content{
+    top: 30px;
+    left: 70px;
+    margin-top: 40px;
+  }
+  /* .live-sports-logos{
+    margin-left: 81px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  } */
+
+}
+
+/* Modal */
+.modal{
+  display: none;
+  position: fixed;
+  top: 0 ;
+  left: 0 ;
+  z-index: 1 ;
+  height: 100%;
+  width: 100% ;
+  background: rgba(0 , 0, 0, 0.5);
+}
+
+.modal-box{
+  /* margin will make  it in the middle */
+  margin: 10% auto;
+  width: 400px;
+  background: #fff;
+  color: #ccc;
+  position: relative;
+
+  /* animation */
+  animation: modalopen .5s ;
+}
+@keyframes modalopen {
+  from {
+    opacity: 0 ;
+  }
+  to {
+    opacity: 1 ;
+  }
+
+}
+
+.modal-body {
+  padding: 50px;
+}
+
+.modal-body h3 {
+  font-weight: bold;
+  color: #000;
+}
+.btn-dark{
+  background: #000;
+  color: #fff;
+}
+.modal-body .btn {
+  width: 100%;
+  margin-top: 30px;
+}
+.modal .close {
+  cursor: pointer;
+  height: 23px;
+  width: 23px ;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal .modal-footer {
+  background: #f7f7f9;
+  color:#333 ;
+  padding: 20px   0 ;
+  border-top: #eee 1px solid ;
+  text-align: center;
+
+}
+.modal .modal-footer a {
+  color: steelblue ;
+}
+
+/* Form */
+.form-control {
+  margin: 20px 0 ;
+  text-transform: uppercase;
+}
+.form-control input {
+  width: 100%;
+  border: 2px #ccc solid ;
+  border-radius: 5px;
+  padding: 5px;
+  height: 50px;
+
+
+}
+
+.form-control label{
+  /* will remove The Label to its own block */
+  display: block;
+}
+
+@media (max-width:740px){
+  .btn {
+    display: inline-block;
+    font-size: 10px;
+  }
+  .header .logo {
+    width: 200px
+  }
+  .header .header-content{
+    text-align: center;
+    padding: 20px;
+  }
+  .sub-header {
+    grid-template-columns: 1fr ; /* stack back 3 elements in one coulmn*/
+    text-align: center;
+    gap: 20px;
+  }
+
+  .sub-header img {
+    width: 250px;
+    margin: auto ;
+  }
+  .sub-header > div:last-of-type {
+    justify-self: center;  /*X axis;*/
+    align-self: center; /*  Y axis  */
+    margin-top: 30px;
+  }
+  .text-xl{
+    line-height: 1.2;
+    font-size: 40px;
+  }
+  .sub-text{
+    font-size: 20px;
+  }
+  .categories .covers {
+    grid-template-columns: 1fr ;
+  }
+
+
+  /* bordre */
+  .live-border {
+    border: solid 3px var(--primary-color);
+    border-radius: 15px;
+    padding: 30px 10px ;
+  }
+  .live-border h4 ,a{
+    padding: 30px 0px;
+  }
+
+/* todo change to 3 open bars  */
+  .footer-lists{
+    flex-direction:  column;
+
+
+  }
+  .footer-lists ul {
+    padding-bottom: 40px;
+
+  }
+
+  .modal-box{
+
+    width: 340px;
+
+
+  }
+
+
+}
+
+
+@media (max-width:860px){
+  .btn {
+    display: inline-block;
+    font-size: 10px;
+  }
+}
