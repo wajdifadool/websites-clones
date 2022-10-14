@@ -76,7 +76,7 @@ ul {
     margin-left: 40px;
 }
 
-.main-menu .logo {
+.main-nav .logo {
     width: 110px;
 }
 
@@ -393,10 +393,59 @@ ul {
     .footer-inner ul {
         display: block;
     }
-
-
 }
 
 .img {
     width: 100%;
+}
+
+/*Responinve for Phones screens */
+
+@media(max-width:510px) {
+    .home-cards {
+        display: block;
+    }
+
+    .home-cards a {
+        padding-bottom: 20px;
+    }
+
+    .links-inner {
+        display: inline-block;
+    }
+
+    .links-inner ul {
+        padding-bottom: 10px;
+    }
+
+    .links-inner ul:last-child {
+        padding-bottom: 0px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .home-cards {
+        margin: 0 10px;
+    }
+
+    .main-nav {
+        margin: 5px 10px;
+    }
+
+    .right-menu {
+        margin-right: 40px;
+    }
+
+    /* Showcase */
+    .showcase {
+        display: flex;
+        padding-left: 20px;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+
+
 }
