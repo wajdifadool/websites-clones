@@ -1,3 +1,7 @@
+Microsoft Landing page Basic clone 
+
+Responsive:
+
 Sources: 
 Font Awesome
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
